@@ -1,0 +1,403 @@
+
+/* Se reestablecen por defecto estilos del navegador */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuraciones base */
+:root{
+    --primary: #fafafa;
+    --secondary: #e7f3ee;
+    --terciary: #b8dacc;
+    --accent: #007bff;
+    --accentHover: #0056b3;
+}
+
+
+html {
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--primary);
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 26px;
+}
+
+/* HEADER */
+
+header{
+    height: 60px;
+    background-color: var(--terciary);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 5;
+}
+
+nav{
+    width: 100%;
+    max-width: 80vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    color: black;
+    font-weight: 600;
+}
+
+nav ul .dropdown {
+    display: none; 
+    position: absolute;
+    width: 150px;
+    background-color: var(--terciary);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav ul li:hover .dropdown {
+    display: block; 
+}
+
+nav ul .dropdown li {
+    display: block; 
+}
+
+
+/* MAIN */
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+section{
+    width: 100%;
+}
+
+/* Sección principal */
+
+/* TODO: AGREGAR ANIMACIÓN A LA SECCIÓN PRINCIPAL */
+
+.principalSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80vw;
+}
+
+
+.principalContainer{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 70px 0px;
+}
+
+.principalContainer > h1, .principalContainer > h2 {
+    flex: 1; 
+    max-width: 50%; 
+    margin: 0; 
+    padding: 10px;
+}
+
+#linkTitle{
+    align-self: flex-start;
+}
+
+.linkBtnContainer{
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+
+.linkBtn, .contactForm button{
+    display: inline-block;
+    padding: 10px 20px;
+    width: 150px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.linkBtn:hover, .contactForm button:hover {
+    background-color: var(--accentHover);
+}
+
+
+/* Sección Acerca de mi */
+
+.aboutMe{
+    display: flex;
+    background-color:var(--secondary);
+    width: 100%;
+    justify-content: space-around;
+    padding: 70px 50px;
+    align-items: center;
+}
+
+.imgContainer {
+    height:400px;
+    width: 400px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.principalImg{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.descriptionContainer{
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.descriptionContainer p{
+    font-size: 22px;
+}
+
+/* Sección Qué hago? */
+
+.whatIDo{
+    display: flex;
+    background-color:var(--primary);
+    width: 100%;
+    justify-content: space-around;
+    padding: 70px 50px;
+    align-items: center;
+}
+
+.whatIDoImg{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Sección Conocimientos y Hobbies */
+
+.knowledgement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+    background-color: var(--secondary);
+}
+
+.knowledgement table{
+    width: 80vw;
+    border: 1px solid #b8dacc;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+.knowledgement tr:nth-child(even) {
+    background-color: var(--secondary);
+}
+
+.knowledgement tr:nth-child(odd) {
+    background-color: var(--terciary);
+}
+
+.knowledgement th{
+    font-size: 24px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: var(--secondary);
+}
+
+.knowledgement td{
+    text-align: left;
+    padding: 2px 0px;
+    font-size: 18px;
+}
+
+
+/* Sección Contacto */
+
+.contactForm{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+}
+
+.contactForm form{
+    border-radius: 15px;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: var(--terciary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contactForm input{
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color:var(--primary);
+}
+
+.inputContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.inputContainer input{
+    width: 230px;
+}
+
+
+.submitBtnContainer i{
+    padding: 0 8px 0 0;
+}
+
+
+/* FOOTER */
+
+footer{
+    height: 80px;
+    background-color: var(--terciary);
+}
+
+/* Tablet horizontal */
+@media (max-width: 1080px) { 
+    .principalContainer{
+        flex-direction: column;
+    }
+    .principalContainer > h1, .principalContainer > h2 {
+        flex: 0; 
+        max-width: 100%; 
+    }
+    .aboutMe{
+        flex-direction: column;
+    }
+    .descriptionContainer{
+        flex: 0;
+        max-width: 100%;
+    }
+    .whatIDo{
+        flex-direction: column;
+    }
+    .imgContainer {
+        max-height: 400px;
+        max-width: 400px;
+        height: 60vw;
+        width: 60vw;
+    }
+    .descriptionContainer{
+        padding: 20px 0;
+    }
+}
+
+/* Tablet vertical */
+@media (max-width: 768px) {
+
+}
+
+/* Mobil 1 */
+@media (max-width: 480px) { 
+    nav{
+        max-width: 100vw;
+    }
+
+    .inputContainer input{
+        max-width: 60%;
+    }
+
+    .knowledgement th{
+        font-size: 16px;
+    }
+    
+    .knowledgement td{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .descriptionContainer p {
+        font-size: 14px;
+    }
+
+    .principalContainer{
+        padding-bottom: 20px;
+    }
+    
+    .contactForm form{
+        padding: 10px 20px;
+    }
+}
+
+/* Mobil 2 */
+@media (max-width: 375px) { 
+    
+}

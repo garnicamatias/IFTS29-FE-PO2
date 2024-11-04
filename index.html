@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cb93d80cbc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio: Matías Garnica</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#">Información <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#acerca-de-mi">Acerca de mi</a></li>
+                        <li><a href="#que-hago">¿Qué hago?</a</li>
+                        <li><a href="#tecnologias">Tecnologías y Hobbies</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- SECCION 1: PRINCIPAL -->
+        <section id="inicio" class="principalSection">
+            <div class="principalContainer">
+                <h1>Hola! Soy Matías, desarrollador web</h1>
+            <h2>
+                Me especializo en desarrollo frontend, tanto en el desarrollo de páginas web estáticas, como de aplicaciones web. Actualmente me encuentro finalizando el 2do año de la Tecnicatura en Desarrollo de Sotfware en el IFTS 29, por lo que he ampliado mis habilidades y conocimientos en otros lenguajes y herramientas.
+            </h2>
+
+            </div>
+
+            <div class="linkBtnContainer">
+                <h3 id="linkTitle">Links:</h3>
+                <a href="www.linkedin.com/in/matias-garnica" class="linkBtn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="" class="linkBtn">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="" class="linkBtn">
+                    CV
+                </a>
+            </div>
+        </section>
+    
+        <!-- SECCIÓN 2: ACERCA DE MI -->
+    <section id="acerca-de-mi" class="aboutMe"> 
+        <div class="imgContainer">
+            <img class="principalImg" src="assets/img/fotoKunumi.webp" alt="perro feliz en una playa">
+        </div>  
+        <div class="descriptionContainer">
+            <h3>Acerca de mí</h3>
+            <p>El es Kunumi, y es parte de la familia hace 3 años. Le encanta pasear por la playa, ya que vivimos en Mar del Plata.</p>
+            <p>Mi trabajo principal es la docencia. Soy docente de Matemática en nivel secundario y universitario, pero la programación también me apasiona. Actualmente realizo trabajos como freelance enfocados en el desarrollo web frontend.</p>
+        </div>
+    </section>
+
+        <!-- SECCIÓN 3: QUÉ HAGO -->
+    <section id="que-hago" class="whatIDo"> 
+        <div class="descriptionContainer">
+            <h3>¿Qué hago?</h3>
+            <p>Me especializo en el diseño y desarrollo de sitios web, centrándome en la escritura de código limpio y eficiente para garantizar una
+            experiencia óptima para el usuario.</p>
+            <p>
+            Destaco mi capacidad de comunicación, tanto verbal como escrita, que me permite transmitir
+            conceptos de manera clara y comprensible.       
+            </p>
+            <p>
+            Poseo habilidades de liderazgo y trabajo en equipo, desarrolladas al trabajar con
+            estudiantes en proyectos colaborativos, lo que me permite crear un ambiente de aprendizaje inclusivo y empoderador.
+            </p>
+        </div>
+        <div class="imgContainer">
+            <img class="whatIDoImg" src="assets/img/imgWhatIDo.webp" alt="imagen de dos personas sonriendo en un bosque">
+        </div>  
+    </section>
+
+    <!-- SECCION 4: CONOCIMIENTOS Y HOBBIES -->
+    <section id="tecnologias" class="knowledgement">
+        <table>
+            <thead>
+                <tr>
+                    <th>Tecnologías conocidas</th>
+                    <th>Tecnologías por conocer</th>
+                    <th>Hobbies</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Html - CSS</td>
+                    <td>React Native</td>
+                    <td>Básquet</td>
+                </tr>
+                <tr>
+                    <td>JavaScript - Typescript</td>
+                    <td>Node.js</td>
+                    <td>Viajar</td>
+                </tr>
+                <tr>
+                    <td>Angular - React</td>
+                    <td>PHP</td>
+                    <td>League of Legends</td>
+                </tr>
+                <tr>
+                    <td>SQL - Figma - Github</td>
+                    <td>Firebase</td>
+                    <td>Cocinar</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+
+    <!-- SECCION 5: CONTACTO -->
+    <section id="contacto" class="contactForm">
+        <!-- TODO: AGREGAR FUNCIONALIDAD AL FORMULARIO -->
+        <form>
+            <h3>Formulario de Contacto</h3>
+            <div class="inputContainer">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="inputContainer">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="inputContainer">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="inputContainer">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="submitBtnContainer">
+                <button type="submit"><i class="fa-regular fa-paper-plane"></i>Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    </main>
+    <footer>
+        <!-- TODO: FOOTER CON INFORMACIÓN DE CONTACTO Y LINKS -->
+    </footer>
+</body>
+</html>
