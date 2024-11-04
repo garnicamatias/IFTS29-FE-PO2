@@ -1,3 +1,4 @@
 # IFTS29-FE-PO2
 Entrega de Práctica Formativa 2 para la materia Front End
-<img src="assets/img/sample.png" alt="porfolio>
+![Imagen de la web completa](assets/img/sample.png)
+
